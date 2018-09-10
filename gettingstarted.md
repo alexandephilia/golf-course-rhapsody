@@ -9,7 +9,7 @@
 </br>
 
 <p align="center">
-<img src="assets/img/home/home.png">
+<img src="assets/img/home/Home.png">
 </p>
 <center><p style="font-size:12px;"><quote>Home</quote></p></center>
 
