@@ -119,7 +119,7 @@ figure.thumbnails img {
 	/* Toggle */
     --sidebar-toggle-background                   : #eef2ed;
     --sidebar-toggle-border-color                 : #747773;
-    --sidebar-toggle-border-radius                : 50px 20px;;
+    --sidebar-toggle-border-radius                : 3px;;
     --sidebar-toggle-border-style                 : solid;
     --sidebar-toggle-border-width                 : 0;
     --sidebar-toggle-height                       : 36px;
