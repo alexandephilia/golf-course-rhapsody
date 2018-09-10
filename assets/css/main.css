@@ -42,94 +42,51 @@ figure.thumbnails img {
             margin: 0 0 0 1.5em;
         }
 
-/* Sidebar
-============================================================================ */
 :root {
-    --sidebar-background                          : #45a852;
-    --sidebar-border-color                        : #eaefe8;
-    --sidebar-border-width                        : 1px;
-    --sidebar-padding                             : 0 25px;
-    --sidebar-transition-duration                 : var(--duration-fast);
-    --sidebar-width                               : 17rem;
+    --sidebar-background                                : var(--mono-tint3);
+    --sidebar-border-color                              : var(--mono-tint2);
+    --sidebar-border-width                              : 0 1px 0 0;
 
-    /* Name */
-    --sidebar-name-background                     : ;
-    --sidebar-name-color                          : #f8fcf7;
-    --sidebar-name-font-family                    : ;
-    --sidebar-name-font-size                      : 20pt;
-    --sidebar-name-font-weight                    : bold;
-    --sidebar-name-margin                         : 1.5rem 0 0;
-    --sidebar-name-padding                        : ;
-    --sidebar-name-text-align                     : center;                         : 15rem;
+    // Name
+    --sidebar-name-color                                : var(--theme-color);
+    --sidebar-name-font-weight                          : 300;
 
-    /* Nav Headings */
-    --sidebar-nav-strong-border-color             : var(--sidebar-border-color);
-    --sidebar-nav-strong-border-width             : ;
-    --sidebar-nav-strong-color                    : var(--heading-color);
-    --sidebar-nav-strong-font-size                : ;
-    --sidebar-nav-strong-font-weight              : var(--strong-font-weight);
-    --sidebar-nav-strong-margin                   : 1.5em 0 0.5em;
-    --sidebar-nav-strong-padding                  : 0.25em 0;
-    --sidebar-nav-strong-text-transform           : ;
+    // Nav Headings
+    --sidebar-nav-strong-border-width                   : 0 0 1px 0;
+    --sidebar-nav-strong-font-size                      : smaller;
+    --sidebar-nav-strong-margin                         : 2em -25px 0.75em 0;
+    --sidebar-nav-strong-padding                        : 0.25em 0 0.75em 0;
+    --sidebar-nav-strong-text-transform                 : uppercase;
 
-    /* Nav Container */
-    --sidebar-nav-background                      : ;
-    --sidebar-nav-indent                          : 1em;
-    --sidebar-nav-margin                          : 1.5rem 0 0;
-    --sidebar-nav-padding                         : ;
+    // Nav Links
+    --sidebar-nav-link-border-color                     : transparent;
+    --sidebar-nav-link-border-color--active             : var(--theme-color);
+    --sidebar-nav-link-border-width                     : 0 4px 0 0;
+    --sidebar-nav-link-color--active                    : var(--theme-color);
+    --sidebar-nav-link-margin                           : 0 -25px 0 0;
+    --sidebar-nav-link-text-decoration                  : none;
+    --sidebar-nav-link-text-decoration--active          : none;
+    --sidebar-nav-link-text-decoration--hover           : underline;
 
-	/* Nav Links */
-    --sidebar-nav-link-background-color           : ;
-    --sidebar-nav-link-background-color--active   : ;
-    --sidebar-nav-link-background-color--hover    : ;
-    --sidebar-nav-link-background-image           : ;
-    --sidebar-nav-link-background-image--active   : ;
-    --sidebar-nav-link-background-image--hover    : ;
-    --sidebar-nav-link-background-position        : ;
-    --sidebar-nav-link-background-position--active: ;
-    --sidebar-nav-link-background-position--hover : ;
-    --sidebar-nav-link-background-repeat          : ;
-    --sidebar-nav-link-background-size            : ;
-    --sidebar-nav-link-background-size--active    : ;
-    --sidebar-nav-link-background-size--hover     : ;
-    --sidebar-nav-link-border-color               : ;
-    --sidebar-nav-link-border-color--active       : ;
-    --sidebar-nav-link-border-color--hover        : ;
-    --sidebar-nav-link-border-radius              : ;
-    --sidebar-nav-link-border-style               : solid;
-    --sidebar-nav-link-border-style--active       : ;
-    --sidebar-nav-link-border-style--hover        : ;
-    --sidebar-nav-link-border-width               : 0;
-    --sidebar-nav-link-border-width--active       : ;
-    --sidebar-nav-link-border-width--hover        : ;
-    --sidebar-nav-link-color                      : #f8fcf7;
-    --sidebar-nav-link-color--active              : ;
-    --sidebar-nav-link-color--hover               : ;
-    --sidebar-nav-link-font-weight                : ;
-    --sidebar-nav-link-font-weight--active        : ;
-    --sidebar-nav-link-font-weight--hover         : ;
-    --sidebar-nav-link-margin                     : ;
-    --sidebar-nav-link-padding                    : 0.25em 0;
-    --sidebar-nav-link-text-decoration            : ;
-    --sidebar-nav-link-text-decoration--active    : underline;
-    --sidebar-nav-link-text-decoration--hover     : underline;
-    --sidebar-nav-link-text-decoration-color      : ;
-    --sidebar-nav-link-transition                 : ;
+    // Nav Links - Pseudo Content
+    --sidebar-nav-link-before-content-l3                : '-';
 
-	/* Toggle */
-    --sidebar-toggle-background                   : #eef2ed;
-    --sidebar-toggle-border-color                 : #747773;
-    --sidebar-toggle-border-radius                : 3px;
-    --sidebar-toggle-border-style                 : solid;
-    --sidebar-toggle-border-width                 : 0;
-    --sidebar-toggle-height                       : 36px;
-    --sidebar-toggle-icon-color                   : var(--base-color);
-    --sidebar-toggle-icon-height                  : 10px;
-    --sidebar-toggle-icon-stroke-width            : 1px;
-    --sidebar-toggle-icon-width                   : 16px;
-    --sidebar-toggle-offset-left                  : 0;
-    --sidebar-toggle-offset-top                   : calc(35px - (var(--sidebar-toggle-height) / 2));
-    --sidebar-toggle-width                        : 44px;
+    // Nav Page Links
+    --sidebar-nav-pagelink-background-image             : #{chevron-data-uri(right, 7px, null, 1.5, #b3b3b3)};
+    --sidebar-nav-pagelink-background-image--active     : #{chevron-data-uri(down, null, 7px, 1.5, #0b87da)};
+    --sidebar-nav-pagelink-background-image--collapse   : #{chevron-data-uri(right, 7px, null, 1.5, #0b87da)};
+    --sidebar-nav-pagelink-background-image--loaded     : #{chevron-data-uri(down, null, 7px, 1.5, #0b87da)};
+    --sidebar-nav-pagelink-background-position          : 3px center;
+    --sidebar-nav-pagelink-background-position--active  : left center;
+    --sidebar-nav-pagelink-background-position--collapse: var(--sidebar-nav-pagelink-background-position);
+    --sidebar-nav-pagelink-background-position--loaded  : var(--sidebar-nav-pagelink-background-position--active);
+    --sidebar-nav-pagelink-padding                      : 0.25em 0 0.25em 20px;
+    --sidebar-nav-pagelink-transition                   : none;
+
+    // Toggle
+    --sidebar-toggle-background                         : var(--sidebar-border-color);
+    --sidebar-toggle-border-radius                      : 0 var(--border-radius-s) var(--border-radius-s) 0;
+    --sidebar-toggle-width                              : 32px;
     }
 
 /* Cover
