@@ -1,4 +1,4 @@
-- [Introduction](/)
+- [Welcome to Golf Course User Guide](/)
 - [Getting Started](gettingstarted.md)
 - [Editing Profile](editingprofile.md)
 - [Customization](customization)
