@@ -46,8 +46,8 @@ figure.thumbnails img {
 ============================================================================= */
 :root {
     --sidebar-background                          : #8ae06d;
-    --sidebar-border-color                        : #EBF2F2 solid;
-    --sidebar-border-width                        : 0;
+    --sidebar-border-color                        : #eaefe8;
+    --sidebar-border-width                        : 1px;
     --sidebar-padding                             : 0 25px;
     --sidebar-transition-duration                 : var(--duration-fast);
     --sidebar-width                               : 17rem;
