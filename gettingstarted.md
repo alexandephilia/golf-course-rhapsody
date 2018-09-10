@@ -8,7 +8,6 @@
 
 <blockquote>**Belum memiliki akun?** klik pada tab <code>Member Area</code> dan kemudian pilih <code>Sign Up</code> untuk 
     melakukan proses registrasi akun sebagai member atau bisa juga dengan cara melalui platform sosial media:</blockquote>
-
 <br/>
 
 <p align="center">
