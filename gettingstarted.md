@@ -43,7 +43,7 @@
 
 <br/>
 
-<blockquote>Kemudian input <code>Email</code> dan <code>Password</code> akun yang terdaftarkan atau menggunakan platform akun sosial media anda yang telah dihubungkan sebelumnya, seperti pada gambar dibawah:</blockquote>
+<blockquote>Kemudian input <code>Email</code> dan <code>Password</code> akun yang terdaftarkan atau menggunakan platform akun sosial media anda yang telah digunakan sebagai login sebelumnya, seperti pada gambar dibawah:</blockquote>
 
 <br/>
 
