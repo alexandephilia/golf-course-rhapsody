@@ -1,7 +1,6 @@
 ## Sign Up & Sign In
 
 <br/>
-
 <font size= '4' face='Ubuntu'><i><b>Register For An Account</b></i></font>  
 
 <br/>
